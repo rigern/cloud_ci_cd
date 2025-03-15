@@ -62,5 +62,6 @@ jobs:
           script: | 
             cd /home/ubuntu/test_cicd 
             docker pull ghcr.io/rigern/cloud_ci_cd:main
+            docker compose down
             docker compose up
             
