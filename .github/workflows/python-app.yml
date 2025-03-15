@@ -60,7 +60,7 @@ jobs:
           username: ubuntu
           key: ${{ secrets.KEY }}
           script: | 
-            cd ~/test_cicd 
-            docker pull 158aacd9036d 
+            cd /home/ubuntu/test_cicd 
+            docker pull ghcr.io/rigern/cloud_ci_cd:main
             docker compose restart
             
