@@ -19,4 +19,4 @@ def client(test_app):
 
 def test_index_page(client):
     res = client.get("/")
-    assert 'Добро пожаловать' in res.text
+    assert 'ИЛья лох' in res.text
